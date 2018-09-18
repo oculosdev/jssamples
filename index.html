@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <link rel="stylesheet" type="text/css" href="main.css">
+        
+    </head>
+    <body>
+        <div class="table">
+            <div class="cell50">
+                <div>
+                    <h2 onclick="toggleHidden('divVarsTypes')">Variables and types</h2>
+                    <div id="divVarsTypes">
+                        <button type="button" id="variableDeclaration">Variable declaration and initialization</button>
+                        <button type="button" id="dataTypes">Data types</button>
+                        <button type="button" id="arithmeticOperators">Arithmetic operators</button>
+                        
+                    </div>
+                </div>    
+
+                <div>
+                    <h2 onclick="toggleHidden('divComparison')">Comparison operators, logical operators and if</h2>
+                    <div id="divComparison">
+                        <button type="button" id="equality">Equality and inequality</button>
+                        <button type="button" id="trueOrFalse">true or false</button>
+                        <button type="button" id="truthyOrFalsy">truthy or falsy</button>
+                        <button type="button" id="nullAndUndefined">null and undefined</button>
+                        <button type="button" id="ifStatement">if statements</button>
+                        <button type="button" id="nullChecks">null and undefined checks</button>
+                        <button type="button" id="booleanAlgebra">Boolean algebra</button>
+                    </div>
+                </div>
+
+                <div>
+                    <h2 onclick="toggleHidden('divLoops')">Loops</h2>
+                    <div id="divLoops">
+                        <button type="button" id="whileLoop">while</button>
+                        <button type="button" id="doWhileLoop">do while</button>
+                        <button type="button" id="forLoop">for loop</button>
+                    </div>
+                </div>
+
+                <div>
+                    <h2 onclick="toggleHidden('divArrays')">Arrays</h2>
+                    <div id="divArrays">
+                        <button type="button" id="initArray">Initialize array</button>
+                        <button type="button" id="initArrayInLoop">Initialize array in loop</button>
+                        <button type="button" id="iterateWithForLoop">Iterate in for loop</button>
+                        <button type="button" id="iterateWithForEach">Iterate with .forEach</button>
+                        <button type="button" id="map">map</button>
+                        <button type="button" id="reduce">reduce</button>
+                        <button type="button" id="filter">filter</button>
+                    </div>
+                </div>
+
+                <div>
+                    <h2 onclick="toggleHidden('divFunctions')">Functions</h2>
+                    <div id="divFunctions">
+                        <span>Named or unnamed block of code that can be executed with or without arguments.</span>
+                        <br/>
+                        <button type="button" id="functions">Functions</button>
+                        <button type="button" id="arrowFunctions">Arrow / anonymous / lambda functions</button>
+                    </div>
+                </div>
+                Objects
+                Object.create(prototype);
+                <div>
+                    <h2 onclick="toggleHidden('divScope')">Scope</h2>
+                    <div id="divScope">
+                        <span>List of variables available at any given point in program</span>
+                        <br/>
+                        <button type="button" id="hoisting">Variable position and hoisting</button>
+                        <button type="button" id="globalScope">Global scope</button>
+                        <button type="button" id="dynamicScope">Dynamic scope</button>
+                        <button type="button" id="lexicalScope">Lexical scope</button>
+                        <button type="button" id="functionBind">function.bind() and function.call()</button>
+                    </div>
+                </div>
+
+                <div>
+                    <h2 onclick="toggleHidden('divReactive')">Reactive programming with Rxjs</h2>
+                    <div id="divReactive">
+                        <button type="button" id="reactiveClick">Reactive click</button>
+                    </div>
+                </div>
+
+                
+            </div>
+            <div style="display: table-cell; width: 50%; border: 1px solid gray; border-radius: 5px; height: 100%; padding: 10px; background: black; color: green; font-family: 'Courier New';">
+                <div id="console">
+                    <span>Console</span>
+                </div>
+            </div>
+        </div>
+
+        <div id="testArea">
+
+        </div>
+
+
+        <script>
+                (function consoleLogger(){
+                    var oldLog = console.log;
+                    console.log = function (message) {
+                        
+                        document.getElementById("console").innerHTML += message + "<br/>";
+    
+                        oldLog.apply(console, arguments);
+                    };
+                })();
+    
+                function toggleHidden(id) {
+                    var x = document.getElementById(id);
+                    if (x.style.display === "none") {
+                        x.style.display = "block";
+                    } else {
+                        x.style.display = "none";
+                    }
+                }
+            </script>
+    
+            <!-- <script src="node_modules/rxjs/" type="application/javascript"></script> -->
+            <script src="https://unpkg.com/rxjs/bundles/rxjs.umd.min.js"></script>
+    
+            <script src="variables.js" type="application/javascript"></script>
+            <script src="comparisonBoolIf.js" type="application/javascript"></script>
+
+            <script src="loops.js" type="application/javascript"></script>
+            
+            <script src="arrays.js" type="application/javascript"></script>
+            <script src="functions.js" type="application/javascript"></script>
+
+            <script src="scope.js" type="application/javascript"></script>
+            
+
+            <!-- <script src="reactive.js" type="application/javascript"></script> -->
+    </body>
+</html>

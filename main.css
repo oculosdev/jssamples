@@ -1,0 +1,23 @@
+
+body {
+    font-size: small; 
+    font-family: Arial, Helvetica, sans-serif
+}
+
+button {
+    font-size: small;
+    margin: 2px;
+}
+
+h2 {
+    cursor: pointer;
+}
+
+.table {
+    display:table
+}
+
+.cell50{
+    display: table-cell; 
+    width:50%;
+}
