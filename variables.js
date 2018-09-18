@@ -50,6 +50,8 @@ function dataTypes() {
 
     console.dir(object2); // Check actual console window
 
+    console.log(JSON.stringify(object2));
+
     object.newProperty = "object new property";
 
     console.log(object);
@@ -91,10 +93,14 @@ function arithmeticOperators() {
     console.log("");
 
     // Increment
+    a = a + 1;
+    console.log("a after a++: " + a);
     a++;
     console.log("a after a++: " + a);
 
     // Decrement
+    a = a - 1;
+    console.log("a after a++: " + a);
     a--;
     console.log("a after a--: " + a);
 

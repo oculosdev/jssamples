@@ -20,7 +20,7 @@ function equalityAndInequality() {
     console.log("num1 == num2: " + equal);
 
     equal = num1 != num2;
-    console.log("num1 != num2: " + notEqual);
+    console.log("num1 != num2: " + equal);
 
     let c = "1";
 
