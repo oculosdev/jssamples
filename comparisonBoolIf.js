@@ -31,6 +31,10 @@ function equalityAndInequality() {
     equal = num1 === c;
 
     console.log("a === c: " + equal);
+
+    equal = num1 !== c;
+
+    console.log("a !== c: " + equal);
 }
 
 function ifStatement() {
@@ -49,8 +53,10 @@ function ifStatement() {
 }
 
 function truthyOrFalsy() {
-    let true1, true2 = true;
-    let false1, false2 = false;
+    let true1 = true;
+    let true2 = true;
+    let false1 = false;
+    let false2 = false;
 
     let stringTrue = "true";
     
