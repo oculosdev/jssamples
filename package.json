@@ -7,9 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "live-server"
   },
-  "devDependencies": {
-    "live-server": "^1.2.0"
-  },
+  "devDependencies": {},
+  "preferGlobal": true,
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {}
 }

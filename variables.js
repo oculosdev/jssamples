@@ -199,6 +199,7 @@ window.addEventListener("load", () => {
     document.getElementById("trueFalse").addEventListener("click", trueFalse);
     document.getElementById("ifStatement").addEventListener("click", ifStatement);
     document.getElementById("dataTypes").addEventListener("click", dataTypes);
+    document.getElementById("assignmentOperators").addEventListener("click", assignmentOperators);
     document.getElementById("arithmeticOperators").addEventListener("click", arithmeticOperators);
 });
 
