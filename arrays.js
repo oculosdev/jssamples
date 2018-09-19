@@ -5,15 +5,37 @@ function initArray(){
 
     console.log(list1);
 
-    let list2 = [1,2,3,4,5];
+    let list2 = [1, 26, 3.2, 41, 5];
     console.log(list2);
 
-    let list3 = new Array(5);
+    let list3 = new Array(2);
+    list3[0] = "4 melk";
+    list3[1] = "dagbla' for i går";
     console.log(list3);
 }
 
-function initArrayInLoop(){
-    
+function initArrayInLoop() {
+    let list = [];
+    list[0] = 0; // Assign index (position in list) 0 of list to be 0
+    list[1] = 1; // Assign index 1 of list to be 1
+
+    for(let i = 2; i < 20; i++) {
+        list[i] =  list[i - 1] + list [i - 2];
+    }
+
+    console.log(list);
+}
+
+function fibonacciWhileLoop() {
+    let list = new Array(20);
+    list[0] = 0; // Assign index (position in list) 0 of list to be 0
+    list[1] = 1; // Assign index 1 of list to be 1
+
+    let i = 2;
+    while(i < 20){
+        list[i] =  list[i - 1] + list [i - 2];
+        i++;
+    }
 }
 
 function iterateWithForLoop(){

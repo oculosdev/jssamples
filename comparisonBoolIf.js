@@ -60,7 +60,6 @@ function truthyOrFalsy() {
 
     let stringTrue = "true";
     
-
     let number1 = 1;
     let string1 = "1"
 

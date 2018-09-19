@@ -1,22 +1,29 @@
 <!DOCTYPE html>
 <html>
     <head>
-
-            <script type="application/javascript">
-        
-                function buttonClick() {
-                    alert("button clicked!!");
-                }
-            
-            </script>
-
+        <!-- Comment  -->
+        <title>The page that says nothing, but does something</title>
     </head>
     <body>
-
         <div>
-            <button type="button" id="myButton" onclick="buttonClick()">My button</button>
+            <h1>Headline</h1>
+            <p><b>Lorem ipsum</b> dolor sit amet, consectetur adipiscing elit. Nam mattis maximus eleifend. Suspendisse id leo id sapien lacinia imperdiet. In non urna enim. Donec interdum neque malesuada rutrum tempor. Ut auctor, nibh vel sollicitudin fermentum, sapien est sagittis odio, ac interdum sem velit et erat. Phasellus non risus pretium, aliquet nisl sit amet, dapibus tortor. Aenean nisi nisl, commodo quis magna ut, ultricies laoreet enim. Aliquam tempus non leo porta aliquet.</p>
+        </div>
+        <div>    
+            <button type="button" onclick="doSomething()">Do something</button> 
+        </div>
+        <div>
+            <a href="https://oculosdialog.com" target="_blank" rel="noopener noreferrer">Oculos Dialog</a>
         </div>
 
-        
-    </body>
+        <script type="application/javascript">
+
+            function doSomething() {
+                alert("hello world!");
+            }
+
+        </script>
+
+        <script src="dosomething.js" type="application/javascript"></script>
+    </body>    
 </html>
