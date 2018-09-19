@@ -5,26 +5,39 @@
         
     </head>
     <body>
+        <nav>
+            <a href="start.html">Go to start</a>
+        </nav>
+        <section>
+            <h3>Documentation</h3>
+            <ul>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5" target="_blank" rel="noopener noreferrer">HTML5</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" rel="noopener noreferrer">CSS</a></li>
+                <li><a href="https://developer.mozilla.org/bm/docs/Web/JavaScript" target="_blank" rel="noopener noreferrer">JavaScript</a></li>
+            </ul>
+        </section>
         <div class="table">
             <div class="cell50">
                 <div>
-                    <h2 onclick="toggleHidden('divVarsTypes')">Variables and types</h2>
+                    <h2 onclick="toggleHidden('divVarsTypes')">Console, variables, if statements and types</h2>
                     <div id="divVarsTypes">
+                        <button type="button" id="consoleLog">console.log</button>
                         <button type="button" id="variableDeclaration">Variable declaration and initialization</button>
+                        <button type="button" id="trueFalse">true or false</button>
+                        <button type="button" id="ifStatement">if statements</button>
                         <button type="button" id="dataTypes">Data types</button>
+                        <button type="button" id="assignmentOperators">Assignment operators</button>
                         <button type="button" id="arithmeticOperators">Arithmetic operators</button>
                         
                     </div>
                 </div>    
 
                 <div>
-                    <h2 onclick="toggleHidden('divComparison')">Comparison operators, logical operators and if</h2>
+                    <h2 onclick="toggleHidden('divComparison')">Comparison and logical operators</h2>
                     <div id="divComparison">
                         <button type="button" id="equality">Equality and inequality</button>
-                        <button type="button" id="trueOrFalse">true or false</button>
                         <button type="button" id="truthyOrFalsy">truthy or falsy</button>
                         <button type="button" id="nullAndUndefined">null and undefined</button>
-                        <button type="button" id="ifStatement">if statements</button>
                         <button type="button" id="nullChecks">null and undefined checks</button>
                         <button type="button" id="booleanAlgebra">Boolean algebra</button>
                     </div>
@@ -43,30 +56,31 @@
                     <h2 onclick="toggleHidden('divArrays')">Arrays</h2>
                     <div id="divArrays">
                         <button type="button" id="initArray">Initialize array</button>
-                        <button type="button" id="initArrayInLoop">Initialize array in loop</button>
-                        <button type="button" id="iterateWithForLoop">Iterate in for loop</button>
+                        <button type="button" id="fibonacciForLoop">Initialize array in for loop</button>
+                        <button type="button" id="fibonacciWhileLoop">Initialize array in while loop</button>
+                        <button type="button" id="iterateWithForLoop">Iterate array in for loop</button>
                         <button type="button" id="iterateWithForEach">Iterate with .forEach</button>
                         <button type="button" id="map">map</button>
-                        <button type="button" id="reduce">reduce</button>
-                        <button type="button" id="filter">filter</button>
+                        <button type="button" id="reduce">map reduce</button>
+                        <button type="button" id="filter">map filter reduce</button>
                     </div>
                 </div>
 
                 <div>
                     <h2 onclick="toggleHidden('divFunctions')">Functions</h2>
                     <div id="divFunctions">
-                        <span>Named or unnamed block of code that can be executed with or without arguments.</span>
-                        <br/>
-                        <button type="button" id="functions">Functions</button>
-                        <button type="button" id="arrowFunctions">Arrow / anonymous / lambda functions</button>
+                        <button type="button" id="functions1">Functions</button>
+                        <button type="button" id="functions2">Nested funtion calls</button>
+                        <button type="button" id="functions3">Arrow functions</button>
+                        <button type="button" id="filterValuesRegular">Map filter reduce with regular functions</button>
+                        <button type="button" id="filterValuesArrowFunctions">Map filter reduce with arrow funtions</button>
+                        <button type="button" id="functions4">Function chaining</button>
                     </div>
                 </div>
-                Objects
-                Object.create(prototype);
                 <div>
                     <h2 onclick="toggleHidden('divScope')">Scope</h2>
                     <div id="divScope">
-                        <span>List of variables available at any given point in program</span>
+                        <span>List of variables available at any given point in the code</span>
                         <br/>
                         <button type="button" id="hoisting">Variable position and hoisting</button>
                         <button type="button" id="globalScope">Global scope</button>
@@ -122,7 +136,7 @@
             <script src="https://unpkg.com/rxjs/bundles/rxjs.umd.min.js"></script>
     
             <script src="variables.js" type="application/javascript"></script>
-            <script src="comparisonBoolIf.js" type="application/javascript"></script>
+            <script src="comparison.js" type="application/javascript"></script>
 
             <script src="loops.js" type="application/javascript"></script>
             

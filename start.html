@@ -2,24 +2,71 @@
 <html>
     <head>
         <!-- Comment  -->
-        <title>The page that says nothing, but does something</title>
+        <title>A page that says nothing, but does something</title>
+        <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            section {
+                padding: 3px;
+            }
+
+            button {
+                margin: 5px;
+                padding: 10px;
+            }
+            footer {
+                text-align: center;
+            }
+        </style>
     </head>
     <body>
-        <div>
-            <h1>Headline</h1>
-            <p><b>Lorem ipsum</b> dolor sit amet, consectetur adipiscing elit. Nam mattis maximus eleifend. Suspendisse id leo id sapien lacinia imperdiet. In non urna enim. Donec interdum neque malesuada rutrum tempor. Ut auctor, nibh vel sollicitudin fermentum, sapien est sagittis odio, ac interdum sem velit et erat. Phasellus non risus pretium, aliquet nisl sit amet, dapibus tortor. Aenean nisi nisl, commodo quis magna ut, ultricies laoreet enim. Aliquam tempus non leo porta aliquet.</p>
-        </div>
-        <div>    
-            <button type="button" onclick="doSomething()">Do something</button> 
-        </div>
-        <div>
-            <a href="https://oculosdialog.com" target="_blank" rel="noopener noreferrer">Oculos Dialog</a>
-        </div>
+        <nav>
+            <a href="/">Go to index</a>
+        </nav>
+        <header><h1 id="headline">A page that says nothing, but does something</h1></header>
+        <section>
+            
+            <section>
+                <article>
+                    <h2>Headline</h2>
+                    <p>
+                        <b>Lorem ipsum</b> dolor sit amet, consectetur adipiscing elit. Nam mattis maximus eleifend. Suspendisse id leo id sapien lacinia imperdiet. In non urna enim. Donec interdum neque 
+                        malesuada rutrum tempor. Ut auctor, nibh vel sollicitudin fermentum, sapien est sagittis odio, ac interdum sem velit et erat. Phasellus non risus pretium, aliquet 
+                        nisl sit amet, dapibus tortor. Aenean nisi nisl, commodo quis magna ut, ultricies laoreet enim. Aliquam tempus non leo porta aliquet.
+                    </p>
+                </article>
+            </section>
+
+            <section>    
+                    <button type="button" onclick="doSomething()">Do something</button><br/>
+                    <button type="button" onclick="toggleHeadline()">Toggle headline</button>
+            </section>
+
+            <section>
+                <a href="https://oculosdialog.com" target="_blank" rel="noopener noreferrer">Oculos Dialog</a>
+            </section>
+        </section>
+
+        <footer>Oculos AS</footer>
 
         <script type="application/javascript">
 
             function doSomething() {
                 alert("hello world!");
+            }
+
+            function toggleHeadline() {
+                var headline1 = "A page that says nothing, but does something";
+                var headline2 = "A page that does something, but says nothing";
+
+                var element = document.getElementById("headline");
+
+                if (element.innerText === headline1){
+                    element.innerText = headline2;
+                } else{
+                    element.innerText = headline1;
+                }
             }
 
         </script>

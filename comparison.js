@@ -1,16 +1,5 @@
 "use strict";
 
-function trueOrFalse() {
-    let a = true;
-    let b = false;
-
-    console.log("a == " + a);
-    console.log("b == " + b);
-
-    console.log("!a == " + !a);
-    console.log("!b == " + !b);
-}
-
 function equalityAndInequality() {
     let num1 = 1;
     let num2 = 2;
@@ -35,21 +24,6 @@ function equalityAndInequality() {
     equal = num1 !== c;
 
     console.log("a !== c: " + equal);
-}
-
-function ifStatement() {
-    let a = true;
-
-    if (a === true) {
-        console.log("a was true");
-    }
-    else {
-        console.log("a was not true");
-    }
-
-    if (a !== false) {
-        console.log("a was not false")
-    }
 }
 
 function truthyOrFalsy() {
@@ -166,10 +140,8 @@ function booleanAlgebra() {
 
 window.addEventListener("load", () => {
     document.getElementById("equality").addEventListener("click", equalityAndInequality);
-    document.getElementById("trueOrFalse").addEventListener("click", trueOrFalse);
     document.getElementById("truthyOrFalsy").addEventListener("click", truthyOrFalsy);
     document.getElementById("nullAndUndefined").addEventListener("click", nullAndUndefined);
-    document.getElementById("ifStatement").addEventListener("click", ifStatement);
     document.getElementById("nullChecks").addEventListener("click", nullChecks);
     document.getElementById("booleanAlgebra").addEventListener("click", booleanAlgebra);
 });
